@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,25 @@
 		0486784423CC980700CC7258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0486784223CC980700CC7258 /* LaunchScreen.storyboard */; };
 		0486784F23CC980700CC7258 /* TaxiAlbaladTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486784E23CC980700CC7258 /* TaxiAlbaladTests.swift */; };
 		0486785A23CC980700CC7258 /* TaxiAlbaladUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486785923CC980700CC7258 /* TaxiAlbaladUITests.swift */; };
+		0486786823CCB2B600CC7258 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486786723CCB2B600CC7258 /* ProfileViewController.swift */; };
+		0486786C23CDA89300CC7258 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486786B23CDA89300CC7258 /* MainViewController.swift */; };
+		0486786E23CDAC5D00CC7258 /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486786D23CDAC5D00CC7258 /* RoutesViewController.swift */; };
+		0486787023CDAC9E00CC7258 /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486786F23CDAC9E00CC7258 /* ToursViewController.swift */; };
+		0486787223CDB58300CC7258 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486787123CDB58300CC7258 /* TicketsViewController.swift */; };
+		0486787523CDD79600CC7258 /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486787423CDD79600CC7258 /* RouteDetailsViewController.swift */; };
+		04AD7D2923CDFC6B008EA012 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D2823CDFC6B008EA012 /* InitialViewController.swift */; };
+		04AD7D2B23CDFCBD008EA012 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D2A23CDFCBD008EA012 /* LoginViewController.swift */; };
+		04AD7D2D23CDFCE1008EA012 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D2C23CDFCE1008EA012 /* RegistrationViewController.swift */; };
+		04AD7D3323CE0FCD008EA012 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D2F23CE0FCC008EA012 /* Constants.swift */; };
+		04AD7D3523CE0FCD008EA012 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D3123CE0FCD008EA012 /* APIClient.swift */; };
+		04AD7D3623CE0FCD008EA012 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D3223CE0FCD008EA012 /* APIRouter.swift */; };
+		04AD7D3823CE0FE6008EA012 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D3723CE0FE6008EA012 /* Alert.swift */; };
+		04AD7D3B23CE1016008EA012 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D3A23CE1016008EA012 /* UserDefault.swift */; };
+		04AD7D3D23CE1026008EA012 /* FirebaseUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D3C23CE1026008EA012 /* FirebaseUploader.swift */; };
+		04AD7D4123CE1AE7008EA012 /* UserElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD7D4023CE1AE7008EA012 /* UserElement.swift */; };
+		6C08574C7259569B01D604DF /* Pods_TaxiAlbaladTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A28273547DCA4C9DF5BECB /* Pods_TaxiAlbaladTests.framework */; };
+		79152B0BC8A1D93E042260EC /* Pods_TaxiAlbalad_TaxiAlbaladUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD84D88D6621CCF3EDECE96 /* Pods_TaxiAlbalad_TaxiAlbaladUITests.framework */; };
+		A6BBB3551039CB84457FD685 /* Pods_TaxiAlbalad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5112D3F221A9DAE7514DC2B /* Pods_TaxiAlbalad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033B119CCE367617C03E5C58 /* Pods-TaxiAlbaladTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbaladTests.debug.xcconfig"; path = "Target Support Files/Pods-TaxiAlbaladTests/Pods-TaxiAlbaladTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0486783423CC980200CC7258 /* TaxiAlbalad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiAlbalad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0486783723CC980200CC7258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0486783923CC980200CC7258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,30 @@
 		0486785523CC980700CC7258 /* TaxiAlbaladUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiAlbaladUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0486785923CC980700CC7258 /* TaxiAlbaladUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiAlbaladUITests.swift; sourceTree = "<group>"; };
 		0486785B23CC980700CC7258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0486786723CCB2B600CC7258 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0486786B23CDA89300CC7258 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0486786D23CDAC5D00CC7258 /* RoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		0486786F23CDAC9E00CC7258 /* ToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
+		0486787123CDB58300CC7258 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		0486787423CDD79600CC7258 /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
+		04AD7D2823CDFC6B008EA012 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		04AD7D2A23CDFCBD008EA012 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04AD7D2C23CDFCE1008EA012 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		04AD7D2F23CE0FCC008EA012 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04AD7D3123CE0FCD008EA012 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		04AD7D3223CE0FCD008EA012 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		04AD7D3723CE0FE6008EA012 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		04AD7D3A23CE1016008EA012 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		04AD7D3C23CE1026008EA012 /* FirebaseUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUploader.swift; sourceTree = "<group>"; };
+		04AD7D4023CE1AE7008EA012 /* UserElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserElement.swift; sourceTree = "<group>"; };
+		14A28273547DCA4C9DF5BECB /* Pods_TaxiAlbaladTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiAlbaladTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DB02341718605FE529EDCB /* Pods-TaxiAlbalad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbalad.debug.xcconfig"; path = "Target Support Files/Pods-TaxiAlbalad/Pods-TaxiAlbalad.debug.xcconfig"; sourceTree = "<group>"; };
+		5E10F7F386184C12F7221DE2 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbalad-TaxiAlbaladUITests.debug.xcconfig"; path = "Target Support Files/Pods-TaxiAlbalad-TaxiAlbaladUITests/Pods-TaxiAlbalad-TaxiAlbaladUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		610B654F6B202F24B735D229 /* Pods-TaxiAlbalad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbalad.release.xcconfig"; path = "Target Support Files/Pods-TaxiAlbalad/Pods-TaxiAlbalad.release.xcconfig"; sourceTree = "<group>"; };
+		7A64640BFD63204AA066204A /* Pods-TaxiAlbaladTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbaladTests.release.xcconfig"; path = "Target Support Files/Pods-TaxiAlbaladTests/Pods-TaxiAlbaladTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BD84D88D6621CCF3EDECE96 /* Pods_TaxiAlbalad_TaxiAlbaladUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiAlbalad_TaxiAlbaladUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA46DE4F83F17BCBE91A6523 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiAlbalad-TaxiAlbaladUITests.release.xcconfig"; path = "Target Support Files/Pods-TaxiAlbalad-TaxiAlbaladUITests/Pods-TaxiAlbalad-TaxiAlbaladUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5112D3F221A9DAE7514DC2B /* Pods_TaxiAlbalad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiAlbalad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BBB3551039CB84457FD685 /* Pods_TaxiAlbalad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C08574C7259569B01D604DF /* Pods_TaxiAlbaladTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79152B0BC8A1D93E042260EC /* Pods_TaxiAlbalad_TaxiAlbaladUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,8 @@
 				0486784D23CC980700CC7258 /* TaxiAlbaladTests */,
 				0486785823CC980700CC7258 /* TaxiAlbaladUITests */,
 				0486783523CC980200CC7258 /* Products */,
+				E337B0D5E0CB2B65F6CF524C /* Pods */,
+				C144AD00878996F1FF0B0A9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +148,27 @@
 		0486783623CC980200CC7258 /* TaxiAlbalad */ = {
 			isa = PBXGroup;
 			children = (
+				04AD7D2E23CE0F86008EA012 /* Networking */,
 				0486783723CC980200CC7258 /* AppDelegate.swift */,
 				0486783923CC980200CC7258 /* SceneDelegate.swift */,
 				0486783B23CC980200CC7258 /* ViewController.swift */,
+				0486786723CCB2B600CC7258 /* ProfileViewController.swift */,
+				0486786B23CDA89300CC7258 /* MainViewController.swift */,
+				0486786D23CDAC5D00CC7258 /* RoutesViewController.swift */,
+				0486786F23CDAC9E00CC7258 /* ToursViewController.swift */,
+				0486787123CDB58300CC7258 /* TicketsViewController.swift */,
+				0486787423CDD79600CC7258 /* RouteDetailsViewController.swift */,
 				0486783D23CC980200CC7258 /* Main.storyboard */,
 				0486784023CC980700CC7258 /* Assets.xcassets */,
 				0486784223CC980700CC7258 /* LaunchScreen.storyboard */,
 				0486784523CC980700CC7258 /* Info.plist */,
+				04AD7D2823CDFC6B008EA012 /* InitialViewController.swift */,
+				04AD7D2A23CDFCBD008EA012 /* LoginViewController.swift */,
+				04AD7D2C23CDFCE1008EA012 /* RegistrationViewController.swift */,
+				04AD7D3723CE0FE6008EA012 /* Alert.swift */,
+				04AD7D3A23CE1016008EA012 /* UserDefault.swift */,
+				04AD7D3C23CE1026008EA012 /* FirebaseUploader.swift */,
+				04AD7D4023CE1AE7008EA012 /* UserElement.swift */,
 			);
 			path = TaxiAlbalad;
 			sourceTree = "<group>";
@@ -128,6 +191,39 @@
 			path = TaxiAlbaladUITests;
 			sourceTree = "<group>";
 		};
+		04AD7D2E23CE0F86008EA012 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04AD7D3123CE0FCD008EA012 /* APIClient.swift */,
+				04AD7D3223CE0FCD008EA012 /* APIRouter.swift */,
+				04AD7D2F23CE0FCC008EA012 /* Constants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C144AD00878996F1FF0B0A9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5112D3F221A9DAE7514DC2B /* Pods_TaxiAlbalad.framework */,
+				7BD84D88D6621CCF3EDECE96 /* Pods_TaxiAlbalad_TaxiAlbaladUITests.framework */,
+				14A28273547DCA4C9DF5BECB /* Pods_TaxiAlbaladTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E337B0D5E0CB2B65F6CF524C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33DB02341718605FE529EDCB /* Pods-TaxiAlbalad.debug.xcconfig */,
+				610B654F6B202F24B735D229 /* Pods-TaxiAlbalad.release.xcconfig */,
+				5E10F7F386184C12F7221DE2 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.debug.xcconfig */,
+				AA46DE4F83F17BCBE91A6523 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.release.xcconfig */,
+				033B119CCE367617C03E5C58 /* Pods-TaxiAlbaladTests.debug.xcconfig */,
+				7A64640BFD63204AA066204A /* Pods-TaxiAlbaladTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0486785E23CC980700CC7258 /* Build configuration list for PBXNativeTarget "TaxiAlbalad" */;
 			buildPhases = (
+				4DBE614359FAB90C4818B0F4 /* [CP] Check Pods Manifest.lock */,
 				0486783023CC980200CC7258 /* Sources */,
 				0486783123CC980200CC7258 /* Frameworks */,
 				0486783223CC980200CC7258 /* Resources */,
+				DBCB9781A5BEEC2329897FD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0486786123CC980700CC7258 /* Build configuration list for PBXNativeTarget "TaxiAlbaladTests" */;
 			buildPhases = (
+				0F9FDE209CF98CF896219ECF /* [CP] Check Pods Manifest.lock */,
 				0486784623CC980700CC7258 /* Sources */,
 				0486784723CC980700CC7258 /* Frameworks */,
 				0486784823CC980700CC7258 /* Resources */,
@@ -170,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0486786423CC980700CC7258 /* Build configuration list for PBXNativeTarget "TaxiAlbaladUITests" */;
 			buildPhases = (
+				ACC58FCE94E53611BA6F0874 /* [CP] Check Pods Manifest.lock */,
 				0486785123CC980700CC7258 /* Sources */,
 				0486785223CC980700CC7258 /* Frameworks */,
 				0486785323CC980700CC7258 /* Resources */,
+				7E3E82389B0E1CF8CB93AACB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +355,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F9FDE209CF98CF896219ECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxiAlbaladTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DBE614359FAB90C4818B0F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxiAlbalad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3E82389B0E1CF8CB93AACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad-TaxiAlbaladUITests/Pods-TaxiAlbalad-TaxiAlbaladUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad-TaxiAlbaladUITests/Pods-TaxiAlbalad-TaxiAlbaladUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad-TaxiAlbaladUITests/Pods-TaxiAlbalad-TaxiAlbaladUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACC58FCE94E53611BA6F0874 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxiAlbalad-TaxiAlbaladUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCB9781A5BEEC2329897FD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad/Pods-TaxiAlbalad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad/Pods-TaxiAlbalad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiAlbalad/Pods-TaxiAlbalad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0486783023CC980200CC7258 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +465,23 @@
 			files = (
 				0486783C23CC980200CC7258 /* ViewController.swift in Sources */,
 				0486783823CC980200CC7258 /* AppDelegate.swift in Sources */,
+				04AD7D3623CE0FCD008EA012 /* APIRouter.swift in Sources */,
+				04AD7D3823CE0FE6008EA012 /* Alert.swift in Sources */,
+				0486786823CCB2B600CC7258 /* ProfileViewController.swift in Sources */,
 				0486783A23CC980200CC7258 /* SceneDelegate.swift in Sources */,
+				0486787223CDB58300CC7258 /* TicketsViewController.swift in Sources */,
+				04AD7D2923CDFC6B008EA012 /* InitialViewController.swift in Sources */,
+				04AD7D2D23CDFCE1008EA012 /* RegistrationViewController.swift in Sources */,
+				04AD7D3523CE0FCD008EA012 /* APIClient.swift in Sources */,
+				04AD7D3323CE0FCD008EA012 /* Constants.swift in Sources */,
+				0486786E23CDAC5D00CC7258 /* RoutesViewController.swift in Sources */,
+				0486787023CDAC9E00CC7258 /* ToursViewController.swift in Sources */,
+				04AD7D3B23CE1016008EA012 /* UserDefault.swift in Sources */,
+				0486786C23CDA89300CC7258 /* MainViewController.swift in Sources */,
+				0486787523CDD79600CC7258 /* RouteDetailsViewController.swift in Sources */,
+				04AD7D2B23CDFCBD008EA012 /* LoginViewController.swift in Sources */,
+				04AD7D3D23CE1026008EA012 /* FirebaseUploader.swift in Sources */,
+				04AD7D4123CE1AE7008EA012 /* UserElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +652,7 @@
 		};
 		0486785F23CC980700CC7258 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DB02341718605FE529EDCB /* Pods-TaxiAlbalad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +671,7 @@
 		};
 		0486786023CC980700CC7258 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610B654F6B202F24B735D229 /* Pods-TaxiAlbalad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +690,7 @@
 		};
 		0486786223CC980700CC7258 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033B119CCE367617C03E5C58 /* Pods-TaxiAlbaladTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +713,7 @@
 		};
 		0486786323CC980700CC7258 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A64640BFD63204AA066204A /* Pods-TaxiAlbaladTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +736,7 @@
 		};
 		0486786523CC980700CC7258 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E10F7F386184C12F7221DE2 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +757,7 @@
 		};
 		0486786623CC980700CC7258 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA46DE4F83F17BCBE91A6523 /* Pods-TaxiAlbalad-TaxiAlbaladUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
