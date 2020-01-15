@@ -41,7 +41,17 @@ struct K {
         static let type_ticket = "typr_ticket"
     }
     
+    struct APIParameterKeyGetTickets {
+        static let id_user = "id_user"
+    }
     
+    struct APIParameterKeySendmail {
+        static let email = "email"
+    }
+    
+    struct APIParameterKeyActivate {
+        static let code = "enter_code"
+    }
     
 
 }

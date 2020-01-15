@@ -63,7 +63,7 @@ class LoginViewController: UIViewController,NVActivityIndicatorViewable {
                     
                     self.stopAnimating()
                     
-                    Alert.show("Login", message: "Error", context: self)
+                    Alert.show("تسجيل الدخول", message: "بيانات الدخول خطأ", context: self)
                 }
             })
             

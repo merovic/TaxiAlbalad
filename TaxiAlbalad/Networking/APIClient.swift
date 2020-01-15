@@ -57,4 +57,23 @@ class APIClient {
     }
     
     
+    static func sendEmail(email: String, completion:@escaping (Result<String,Error>)->Void) {
+        
+        performRequestSimple(route: APIRouter.sendMail(email: email), completion: completion)
+        
+    }
+    
+    static func activate(code: String, completion:@escaping (Result<String,Error>)->Void) {
+        
+        performRequestSimple(route: APIRouter.activate(code: code), completion: completion)
+        
+    }
+    
+    static func getTickets(id_user: String, completion:@escaping (Result<[TicketElement],Error>)->Void) {
+        
+        performRequest(route: APIRouter.getTicket(id_user: id_user), completion: completion)
+        
+    }
+    
+    
 }

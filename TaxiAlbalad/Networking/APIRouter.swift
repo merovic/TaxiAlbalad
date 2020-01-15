@@ -13,6 +13,9 @@ enum APIRouter: URLRequestConvertible {
     case login(email:String,pass:String)
     case registration(fn:String,ln:String,email:String,phone:String,pass:String,img:String)
     case addTicket(id_user:String,number_up_five:String,number_down_five:String,station_arrive:String,date_arrive:String,time_arrive:String,type_ticket:String)
+    case getTicket(id_user:String)
+    case sendMail(email:String)
+    case activate(code:String)
     
     
     // MARK: - HTTPMethod
@@ -24,7 +27,12 @@ enum APIRouter: URLRequestConvertible {
             return .get
         case .addTicket:
             return .get
-        
+        case .getTicket:
+            return .get
+        case .sendMail:
+            return .get
+        case .activate:
+            return .get
         }
         
     }
@@ -38,6 +46,12 @@ enum APIRouter: URLRequestConvertible {
             return "/register"
         case .addTicket:
             return "/insert_ticket"
+        case .getTicket:
+            return "/select_ticket_by_id_user"
+        case .sendMail:
+            return "/sendactivemail"
+        case .activate:
+            return "/entercode_activemail"
         }
     }
     
@@ -53,6 +67,12 @@ enum APIRouter: URLRequestConvertible {
         case .addTicket(let id_user, let number_up_five, let number_down_five, let station_arrive, let date_arrive, let time_arrive, let type_ticket):
             return [K.APIParameterKeyAddTicket.id_user: id_user, K.APIParameterKeyAddTicket.number_up_five: number_up_five, K.APIParameterKeyAddTicket.number_down_five: number_down_five, K.APIParameterKeyAddTicket.station_arrive: station_arrive, K.APIParameterKeyAddTicket.date_arrive: date_arrive, K.APIParameterKeyAddTicket.time_arrive: time_arrive, K.APIParameterKeyAddTicket.type_ticket: type_ticket]
         
+        case .getTicket(let id_user):
+            return [K.APIParameterKeyGetTickets.id_user: id_user]
+        case .sendMail(let email):
+            return [K.APIParameterKeySendmail.email: email]
+        case .activate(let code):
+            return [K.APIParameterKeyActivate.code: code]
         }
 }
     

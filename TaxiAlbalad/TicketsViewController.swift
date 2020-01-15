@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class TicketsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class TicketsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,NVActivityIndicatorViewable {
 
     @IBOutlet weak var belowTextField: UITextField!
     @IBOutlet weak var aboveTextField: UITextField!
@@ -56,6 +57,50 @@ class TicketsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         setupDateTimePicker(mode: .time, field: timeTextField, picker: timePicker)
         
     }
+    
+    
+    @IBAction func reserveClick(_ sender: Any) {
+        
+        reserve(userID: String(UserDefault.getID()), below: belowTextField.text!, above: aboveTextField.text!, station: stationTextField.text!, date: dateTextField.text!, time: timeTextField.text!, ticket: ticketTextField.text!)
+    }
+    
+    
+    func reserve(userID:String,below:String,above:String,station:String,date:String,time:String,ticket:String){
+           
+           self.startAnimating()
+           
+           DispatchQueue.global(qos: .userInteractive).async {
+               // Test Login request
+            APIClient.addTicket(id_user: userID, number_up_five: below, number_down_five: above, station_arrive: station, date_arrive: station, time_arrive: time, type_ticket: time, completion: { result in
+                   switch result {
+                   case .success(let response):
+                       DispatchQueue.main.async {
+                           print(response)
+                           
+                           self.stopAnimating()
+                           
+                           if(response == "True")
+                           {
+                               Alert.show("حجز تذكره", message: "تم الحجز بنجاح", context: self)
+                           }else
+                           {
+                               Alert.show("حجز تذكره", message: "فشل في الحجز", context: self)
+                           }
+                           
+                           
+                       }
+                   case .failure(let error):
+                       print(error.localizedDescription)
+                       
+                       self.stopAnimating()
+                       
+                       Alert.show("حجز تذكره", message: "فشل في الحجز", context: self)
+                   }
+               })
+               
+           }
+       }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -187,11 +232,6 @@ class TicketsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         }
         
         self.view.endEditing(true)
-        
-    }
-    
-    @IBAction func reserveClick(_ sender: Any) {
-        
         
     }
     
